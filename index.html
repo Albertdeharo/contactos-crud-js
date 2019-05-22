@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+       Contactos Crud
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nombre completo *</label><label class="validation-error hide" id="nombreValidationError">Este campo es obligatorio.</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input class="label" type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Empresa</label>
+                        <input type="text" name="empresa" id="empresa">
+                    </div>
+                    <div>
+                        <label>Ciudad</label>
+                        <input type="text" name="ciudad" id="ciudad">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Añadir">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="listaContactos">
+                    <thead>
+                        <tr>
+                            <th>Nombre Completo</th>
+                            <th>Email</th>
+                            <th>Empresa</th>
+                            <th>Ciudad</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
